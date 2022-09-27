@@ -13,7 +13,8 @@ const Hero = (props: Props) => {
     });
 
   return (
-    <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
+    <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden select-none'>
+        <BackgroundCircles />
         <Image
             className='relative rounded-full mx-auto object-cover'
             src="/Turnt.PNG"
@@ -21,10 +22,9 @@ const Hero = (props: Props) => {
             width={100}
             height={100}
         />
-        <BackgroundCircles />
         <h1>
             <span>{text}</span>
-            <Cursor cursorColor='' />
+            <Cursor cursorColor='#0e8882' />
         </h1>
     </div>
   )
