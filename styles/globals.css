@@ -3,3 +3,9 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+@layer components {
+    .heroButton {
+        @apply mx-1 px-6 py-2 border border-[#222222] rounded-full uppercase tracking-widest text-gray-400 transition-all hover:border-emerald-200/40 hover:text-emerald-200/40 text-xs hover:shadow-[0_0px_50px_-13px_rgba(0,0,0,0.3)] hover:shadow-emerald-500 duration-500
+    }
+}

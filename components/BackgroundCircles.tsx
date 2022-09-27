@@ -6,9 +6,7 @@ type Props = {}
 const BackgroundCircles = (props: Props) => {
   return (
     <motion.div
-        initial={{
-            opacity: 0,
-        }}
+        initial={{ opacity: 0, y: 25 }}
         animate={{
             scale: [1,2,2,3,1],
             opacity: [0.1, 0.2, 0.4, 0.8, 0.1, 1],
@@ -17,6 +15,7 @@ const BackgroundCircles = (props: Props) => {
         transition={{
             duration: 2.5,
         }}
+        whileInView={{ y: 0 }}
         className='relative flex justify-center items-center select-none'
     >
         <div className='absolute border border-[#333333] rounded-full h-[250px] w-[250px] mt-52 animate-ping'/>
