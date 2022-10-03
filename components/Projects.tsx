@@ -35,12 +35,22 @@ const Projects = ({ projects }: Props) => {
                             <h4 className="text-lg font-semibold text-center">
                                 {project?.title}
                             </h4>
-                            <a
-                                href={project?.demoLink}
-                                className="m-auto border border-emerald-500 rounded-lg px-5 py-1 bg-[#0e8882]/20 opacity-50 hover:opacity-100 duration-500"
-                            >
-                                Demo
-                            </a>
+                            <div className="flex flex-row justify-center gap-6">
+                                <a
+                                    href={project?.demoLink}
+                                    className="border border-emerald-500 rounded-lg px-5 py-1 bg-[#0e8882]/20 opacity-50 hover:opacity-100 duration-500"
+                                    target="_blank"
+                                >
+                                    Demo
+                                </a>
+                                <a
+                                    href={project?.githubLink}
+                                    className="border border-emerald-500 rounded-lg px-5 py-1 bg-[#0e8882]/20 opacity-50 hover:opacity-100 duration-500"
+                                    target="_blank"
+                                >
+                                    Code
+                                </a>
+                            </div>
                             <div className="flex items-center space-x-2 justify-center">
                                 {project?.technologies.map((technology) => (
                                     <img
