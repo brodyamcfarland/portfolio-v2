@@ -54,6 +54,13 @@ const Hero = ({ pageInfo }: Props) => {
                     <Link href="#experience">
                         <button className="heroButton">Experience</button>
                     </Link>
+                    <a
+                        href="/BrodyMcFarlandResume.pdf"
+                        download
+                        className="heroButton"
+                    >
+                        Download Resume
+                    </a>
                 </div>
             </div>
         </div>
