@@ -40,7 +40,7 @@ const Projects = ({ projects }: Props) => {
                                     href={project?.demoLink}
                                     className="border border-emerald-500 rounded-lg px-5 py-1 bg-[#0e8882]/20 opacity-50 hover:opacity-100 duration-500"
                                     target="_blank"
-                                    rel="noreferer"
+                                    rel="noreferrer"
                                 >
                                     Demo
                                 </a>
@@ -48,7 +48,7 @@ const Projects = ({ projects }: Props) => {
                                     href={project?.githubLink}
                                     className="border border-emerald-500 rounded-lg px-5 py-1 bg-[#0e8882]/20 opacity-50 hover:opacity-100 duration-500"
                                     target="_blank"
-                                    rel="noreferer"
+                                    rel="noreferrer"
                                 >
                                     Code
                                 </a>
