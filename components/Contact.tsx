@@ -30,24 +30,28 @@ const Contact = (props: Props) => {
                 Contact
             </h3>
             <div className="flex flex-col mt-18 md:mt-0 space-y-10">
-                <h4 className="text-sm md:text-xl font-semibold text-center">
+                <h4 className="text-sm md:text-md lg:text-xl font-semibold text-center">
                     Feel free to reach out using the {""}
                     <span className="underline decoration-emerald-500/50">
                         methods below.
                     </span>
                 </h4>
-                <div className="space-y-3 md:space-y-10">
+                <div className="space-y-3 md:space-y-3">
                     <div className="flex items-center justify-center space-x-5">
                         <PhoneIcon className="text-emerald-600 h-7 w-7 animate-pulse" />
-                        <p className="text-lg">(805) 551-3036</p>
+                        <p className="text-md md:text-lg">(805) 551-3036</p>
                     </div>
                     <div className="flex items-center justify-center space-x-5">
                         <EnvelopeIcon className="text-emerald-600 h-7 w-7 animate-pulse" />
-                        <p className="text-lg">brodyamcfarland@gmail.com</p>
+                        <p className="text-md md:text-lg">
+                            brodyamcfarland@gmail.com
+                        </p>
                     </div>
                     <div className="flex items-center justify-center space-x-5">
                         <MapPinIcon className="text-emerald-600 h-7 w-7 animate-pulse" />
-                        <p className="text-lg">Simi Valley, CA, 93065</p>
+                        <p className="text-md md:text-lg">
+                            Simi Valley, CA, 93065
+                        </p>
                     </div>
                 </div>
                 <form
@@ -82,7 +86,7 @@ const Contact = (props: Props) => {
                     />
                     <button
                         type="submit"
-                        className="bg-[#0e8882] py-5 px-10 rounded-md font-semibold text-lg opacity-70 hover:opacity-100 duration-500"
+                        className="bg-[#0e8882] py-3 lg:py-5 px-10 rounded-md font-semibold text-lg opacity-70 hover:opacity-100 duration-500"
                     >
                         Submit
                     </button>
